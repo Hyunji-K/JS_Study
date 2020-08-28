@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const score = prompt('국 수 영 점수 입력');
+        let sum = 0;
+
+        const scores = score.split(' ');
+        console.log(scores); 
+        for(let i=0; i<scores.length; i++){
+           //parseInt가 중요하네 
+           sum += parseInt(scores[i], 10);
+        }
+        let average = Math.floor(sum/3);
+        console.log(average); 
+    </script>
+</body>
+</html>
