@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const name = prompt('이름 입력:').split(' ');
+        const num = prompt('점수 입력:').split(' ');
+
+        const list = {};
+        for(let i=0; i<name.length; i++){
+            list[name[i]] = parseInt(num[i],10);
+        }
+
+        console.log(list);
+    </script>
+</body>
+</html>
