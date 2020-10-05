@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function one(n){
+            function two(num){
+               const answer = Math.pow(num, n);
+               return answer;
+            }
+            return two;
+        }
+
+        const a = one(2);
+        const b = one(3);
+        const c = one(4);
+
+        console.log(a(10));
+        console.log(b(10));
+        console.log(c(10));
+    </script>
+</body>
+</html>
